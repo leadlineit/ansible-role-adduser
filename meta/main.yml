@@ -1,0 +1,18 @@
+---
+galaxy_info:
+  role_name: adduser
+  namespace: leadlienit
+  author: Stas Stavnichuk
+  description: Manage local users
+  license: MIT
+  min_ansible_version: 2.5
+  platforms:
+    - name: Debian
+      versions:
+        - bullseye
+        - buster
+        - stretch
+  galaxy_tags:
+    - system
+    - user
+    - debian

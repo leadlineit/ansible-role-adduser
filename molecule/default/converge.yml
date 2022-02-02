@@ -1,0 +1,12 @@
+---
+- name: Converge
+  hosts: all
+  tasks:
+    - name: install requirements
+      apt:
+        name: gnupg
+        state: present
+        update_cache: true
+    - name: "Include leadlineit.adduser"
+      include_role:
+        name: "leadlineit.adduser"
