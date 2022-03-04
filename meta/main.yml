@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   role_name: adduser
-  namespace: leadlienit
+  namespace: leadlineit
   author: Stas Stavnichuk
   description: Manage local users
   license: MIT

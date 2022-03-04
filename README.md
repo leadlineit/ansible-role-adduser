@@ -1,4 +1,4 @@
-# Ansible Role Docker
+# Ansible Role Adduser
 
 ![Build Status](https://github.com/leadlineit/ansible-role-adduser/actions/workflows/ansible-galaxy-ci.yml/badge.svg)
 
@@ -12,7 +12,15 @@ This role requires Ansible 2.5 or higher.
 Role Variables
 --------------
 
-None.
+```yaml
+---
+  adduser:
+    - name: debian
+      state: absent
+    - name: user
+      state: present
+      password: Aver@geStrongP@ssword12345
+```
 
 Dependencies
 ------------
@@ -24,9 +32,11 @@ Example Playbook
 
 Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
 
+```yaml
     - hosts: servers
       roles:
          - { role: leadlineit.adduser, tags: adduser }
+```
 
 License
 -------

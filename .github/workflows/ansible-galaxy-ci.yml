@@ -11,7 +11,7 @@ on:
 
 defaults:
   run:
-    working-directory: 'leadlineit.docker'
+    working-directory: 'leadlineit.adduser'
 
 jobs:
   lint:
@@ -21,7 +21,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
         with:
-          path: 'leadlineit.docker'
+          path: 'leadlineit.adduser'
 
       - name: Set up Python 3
         uses: actions/setup-python@v2
@@ -43,13 +43,14 @@ jobs:
     strategy:
       matrix:
         distro:
+          - stretch
           - buster
           - bullseye
     steps:
       - name: checkout
         uses: actions/checkout@v2
         with:
-          path: 'leadlineit.docker'
+          path: 'leadlineit.adduser'
       - name: Set up Python 3
         uses: actions/setup-python@v2
         with:
@@ -80,7 +81,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
         with:
-          path: 'leadlineit.docker'
+          path: 'leadlineit.adduser'
 
       - name: Set up Python 3
         uses: actions/setup-python@v2
