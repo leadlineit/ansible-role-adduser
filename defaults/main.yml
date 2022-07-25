@@ -2,6 +2,8 @@
 adduser:
   - name: debian
     state: absent
+  - name: centos
+    state: absent
   - name: user
     state: present
     password: Aver@geStrongP@ssword12345

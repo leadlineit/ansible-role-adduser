@@ -3,7 +3,7 @@
 ![Build Status](https://github.com/leadlineit/ansible-role-adduser/actions/workflows/ansible-galaxy-ci.yml/badge.svg)
 [![Galaxy Role](https://img.shields.io/badge/Ansible--Galaxy-leadlineit.adduser-blue.svg?logo=ansible&logoColor=white)](https://galaxy.ansible.com/leadlineit/adduser/)
 
-This role helps to manage locale users on a Debian (stretch/buster/bullseye).
+This role helps to manage locale users on a Debian (stretch/buster/bullseye) or Red Hat EL(7/8).
 
 Requirements
 ------------
@@ -17,6 +17,8 @@ Role Variables
 ---
 adduser:
   - name: debian
+    state: absent
+  - name: centos
     state: absent
   - name: user
     state: present
