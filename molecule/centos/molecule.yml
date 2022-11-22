@@ -13,7 +13,7 @@ lint: |
   ansible-lint
   flake8
 platforms:
-  - name: instance-centos
+  - name: Create an instance for CentOS
     image: "6nsh/centos:molecule-${MOLECULE_DISTRO:-stream8}"
     command: ""
     volumes:

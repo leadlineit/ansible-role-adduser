@@ -13,14 +13,14 @@ lint: |
   ansible-lint
   flake8
 platforms:
-  - name: instance-debian
+  - name: Create an instance for Debian
     image: "6nsh/debian:molecule-${MOLECULE_DISTRO:-bullseye}"
     command: ""
     volumes:
       - /sys/fs/cgroup:/sys/fs/cgroup:ro
     privileged: true
     pre_build_image: true
-  - name: instance-centos
+  - name: Create an instance for CentOS
     image: "6nsh/centos:molecule-${MOLECULE_DISTRO:-stream8}"
     command: ""
     volumes:

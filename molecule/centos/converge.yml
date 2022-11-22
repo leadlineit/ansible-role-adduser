@@ -8,6 +8,6 @@
         name: gnupg
         state: present
         update_cache: true
-    - name: "Include leadlineit.adduser"
+    - name: Include leadlineit.adduser
       ansible.builtin.include_role:
         name: "leadlineit.adduser"
