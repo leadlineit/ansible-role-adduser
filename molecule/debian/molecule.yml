@@ -13,7 +13,7 @@ lint: |
   ansible-lint
   flake8
 platforms:
-  - name: Create an instance for Debian
+  - name: instance-debian
     image: "6nsh/debian:molecule-${MOLECULE_DISTRO:-bullseye}"
     command: ""
     volumes:
