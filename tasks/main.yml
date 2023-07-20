@@ -15,6 +15,7 @@
 - name: Set change password before first login
   when: adduser is defined and adduser and item.reset is defined
   ansible.builtin.command: chage -d 0 {{ item.name }}
+  changed_when: false
   with_items:
     - "{{ adduser }}"
 
